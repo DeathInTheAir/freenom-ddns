@@ -58,7 +58,7 @@ updateResult=$(curl --compressed -k -L -b "$cookie_file" \
                     -F "records[0][line]=" \
                     -F "records[0][type]=A" \
                     -F "records[0][name]=" \
-                    -F "records[0][ttl]=14440" \
+                    -F "records[0][ttl]=300" \
                     -F "records[0][value]=$current_ip" \
                     "$MANAGED_URL" 2>&1)
 
