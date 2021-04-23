@@ -10,9 +10,11 @@ rm $FULL_PATH
 ;;
 "start")
 echo "------- Started domain address check at: $(date) -------" >> $FULL_PATH
+echo "------- Started domain address check at: $(date) -------"
 ;;
 continue)
 echo $2 >> $FULL_PATH
+echo $2
 ;;
 "end")
 echo "" >> $FULL_PATH
